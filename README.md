@@ -215,7 +215,7 @@ By default, you can't simply connect your ADXL to the Gemini. There are some mor
 
 Note: This only applies to an accelerometer which should be connected via SPI directly on the SBC. If you're using an USB accelerometer, you simply can set it up as told by its manual.
 
-### Make the Fly Pi a secondary MCU
+### Enable SPI
 
 First, enable SPI in armbian-config. Connect via SSH and type:
 
