@@ -283,10 +283,13 @@ probe_points:
 
 # this enables input shaper. Don't firget to put in your own values after you performed a resonance test
 [input_shaper]
-shaper_type_x = mzv
-shaper_freq_x = 105.8
-shaper_type_y = mzv
-shaper_freq_y = 76.0
+shaper_freq_x: 68.2
+shaper_type_x: mzv
+damping_ratio_x: 0.055
+shaper_freq_y: 54.0
+shaper_type_y: zv
+damping_ratio_y: 0.0523
+
 ```
 
 Shut down your Gemini, connect the ADXL345 to its SPI port, fire it up again, home it and then use the console in Fluidd / Mainsal to run:
