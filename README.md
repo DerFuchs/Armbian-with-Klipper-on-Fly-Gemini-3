@@ -82,7 +82,10 @@ Nagivate to `Personal`, set your time zone and hostname. You can choose differen
 Navigate up and to `Network`next. Choose `WiFi` to connect to your local WiFi if you want to use a wireless connection later. Your device will receive an additional IP address for that WiFi connection, which you'll have to look for again on your router.
 
 ## Disable updating kernel and other stuff
-Still in armbian-config, navigate up and to `System`. Disable Armbian kernel upgrades.
+Still in armbian-config, navigate up and to `System`:
+```
+Disable Armbian kernel upgrades. This is important!
+```
 
 Reboot the system:
 ```
@@ -174,7 +177,11 @@ There's a possible problem which causes Klipper to not be able to connect to Gem
 
 A too old Klipper firmware running on the MCU.
 
-You might have to flash Gemini's MCU to the a Klipper firmware, matching the Klipper version you have installed before. You can do that with KIAUH in its `Advanced` menu. Choose `Build + Flash` and follow the instructions.
+You might have to flash Gemini's MCU to the a Klipper firmware, matching the Klipper version you have installed before. You can do that with KIAUH in its `Advanced` menu. Choose `Build + Flash` and follow the instructions. You need to temporarily remove a jumper before being able to flash. See point 10.a here: https://jjarrard.github.io/Gemini-V3-Flash-Voron-V0/installation/
+
+After flashing, turn off the Gemini, plug the jumper back in and start it again.
+
+You can check your MCU's version in Fluidd / Mainsail. If the above method did not work, you can try the manual one, provided there as well: https://jjarrard.github.io/Gemini-V3-Flash-Voron-V0/installation/
 
 ## Your config
 You can now use Fluidd / Mainsail to paste-in the rest of your config.cfg and other files as well. That's up to you and depends on your printer.
