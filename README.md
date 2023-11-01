@@ -15,7 +15,7 @@ Use this manual at your own risk. Some of the steps provided may cause damage to
 It is recommended to use another SD card to keep your current setup untouched. You can simply swap these cards on the left side of your Fly Gemini.
 
 # Restrictions
-You're not able to fully upgrade the Armbian OS (yet) because some of  the software has been card-coded into the system by Mellow. As soon there's a possible solution for getting rid of it, this guide will be upgraded. But for now you will NOT get a fully (but mostly) independent system.
+You're not able to fully upgrade the Armbian OS (yet) because some of  the software has been hard-coded into the system by Mellow. As soon there's a possible solution for getting rid of it, this guide will be upgraded. But for now you will NOT get a fully (but mostly) independent system.
 
 # Known problems
 - reboot does not work properly
