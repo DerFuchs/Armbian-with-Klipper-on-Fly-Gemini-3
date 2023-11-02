@@ -285,10 +285,8 @@ probe_points:
 [input_shaper]
 shaper_freq_x: 68.2
 shaper_type_x: mzv
-damping_ratio_x: 0.055
 shaper_freq_y: 54.0
 shaper_type_y: zv
-damping_ratio_y: 0.0523
 
 ```
 
