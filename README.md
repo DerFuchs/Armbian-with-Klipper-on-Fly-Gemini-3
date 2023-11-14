@@ -50,7 +50,7 @@ Connect your Gemini with your local router or switch with a LAN cable and find o
 The Gemini uses the name "flypi" by default. So, look for that. You might also have a chance to simply connect to it by using `flypi` instead if its IP address.
 
 Once you found out your Gemini's IP address, simply connect to it via SSH by using Putty on Windows:
-https://www.ssh.com/academy/ssh/putty/windows
+[Download Putty](https://www.ssh.com/academy/ssh/putty/windows)
 
 ... or Terminal on MacOS by simply starting Terminal and typing:
 
@@ -234,7 +234,7 @@ param_spidev_spi_bus=0
 Alternatively, edit this file via sudo and add the line. It's the same.
 ```/boot/armbianEnv.txt```
 
-(For more information, [have a look at this answer on Stackexchange](https://unix.stackexchange.com/a/497005))
+For more information, [have a look at this answer on Stackexchange](https://unix.stackexchange.com/a/497005)
 
 ### Reboot ;)
 Connect as regular user again.
