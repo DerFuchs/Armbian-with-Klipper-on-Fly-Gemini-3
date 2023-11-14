@@ -31,7 +31,7 @@ SSH = (S)ecure (Sh)ell = A software protocol, enabling connections to computers 
 ## Install and Set Up Armbian
 
 ### Prepare SD card for flashing
-https://mellow.klipper.cn/#/introduction/downloadimg
+[Download the Armbian image from Mellow](https://mellow.klipper.cn/#/introduction/downloadimg)
 (translate to english in the upper right corner)
 
 Download the "Original Armbian system" - ignore the "no support for klipper installation, etc.". It's easy to get Klipper running.
@@ -43,7 +43,7 @@ After flasing that SD card with the Armbian image, put it into your Gemini and f
 ### Connect to it the first time
 There's multiple ways to connect to the system. This guide only shows how to do it via network connection. 
 
-If you don't own a router with LAN ports or don't have a LAN cable by hand to connect your Gemini to your router, you can choose the way over USB. Use this guide, starting at Step 5: https://jjarrard.github.io/Gemini-V3-Flash-Voron-V0/installation/
+If you don't own a router with LAN ports or don't have a LAN cable by hand to connect your Gemini to your router, you can choose the way over USB. Use this guide, starting at Step 5: s://jjarrard.github.io/Gemini-V3-Flash-Voron-V0/installation/
 
 Connect your Gemini with your local router or switch with a LAN cable and find out the IP address of the Gemini via your router's UI. Use your router's manual to figure out how to do it. It's usually a login via browser and then navigating to "network devices" or something like that.
 
@@ -127,8 +127,8 @@ DO NOT PERFORM THE FOLLOWING ACTIONS AS ROOT USER. CONNECT WITH YOUR REGULAR USE
 ### Install KIAUH
 Don't install any software by hand. Instead, use the Klipper Installer And Update Helper (KIAUH). It provides an easy-enough interface to install and set up commonly used software packages and even flash MCUs with the Klipper firmware.
 
-Open this website and follow the installation instructions, starting at "Download and use KIAUH":
-https://github.com/dw-0/kiauh#-download-and-use-kiauh
+Visit KIAUH's project website at Github and and follow the installation instructions, starting at "Download and use KIAUH":
+[KIAUH at GitHub](https://github.com/dw-0/kiauh#-download-and-use-kiauh)
 
 Come back here after you have KIAUH running.
 
@@ -177,11 +177,12 @@ There's a possible problem which causes Klipper to not be able to connect to Gem
 
 A too old Klipper firmware running on the MCU.
 
-You might have to flash Gemini's MCU to the a Klipper firmware, matching the Klipper version you have installed before. You can do that with KIAUH in its `Advanced` menu. Choose `Build + Flash` and follow the instructions. You need to temporarily remove a jumper before being able to flash. See point 10.a here: https://jjarrard.github.io/Gemini-V3-Flash-Voron-V0/installation/
+You might have to flash Gemini's MCU to the a Klipper firmware, matching the Klipper version you have installed before. You can do that with KIAUH in its `Advanced` menu. Choose `Build + Flash` and follow the instructions. You need to temporarily remove a jumper before being able to flash. [See point 10.a there](https://jjarrard.github.io/Gemini-V3-Flash-Voron-V0/installation/)
+
 
 After flashing, turn off the Gemini, plug the jumper back in and start it again.
 
-You can check your MCU's version in Fluidd / Mainsail. If the above method did not work, you can try the manual one, provided there as well: https://jjarrard.github.io/Gemini-V3-Flash-Voron-V0/installation/
+You can check your MCU's version in Fluidd / Mainsail. If the above method did not work, you can try the manual one, [provided there as well](https://jjarrard.github.io/Gemini-V3-Flash-Voron-V0/installation/)
 
 ## Your config
 You can now use Fluidd / Mainsail to paste-in the rest of your config.cfg and other files as well. That's up to you and depends on your printer.
@@ -193,8 +194,8 @@ You might give Klippain a try. See the optional parts for more details.
 You'll notice that during long prints, you won't be able to connect to Fluidd / Mainsail via your browser after some time. That's caused by the WiFi connection on the SBC has gone to sleep mode.
 
 To prevent the WiFi connection on system to go to sleep mode, install Sonar. It's simple:
-https://github.com/mainsail-crew/sonar
 
+[Sonar project page at GitHub](https://github.com/mainsail-crew/sonar)
 
 ## (Optional) Install Klippain
 It's a bit painful by itself first, but when you dig deeper into it, it's really fantastic!
@@ -202,12 +203,12 @@ It's a bit painful by itself first, but when you dig deeper into it, it's really
 Klippain is some kind of universal Klipper config template. It comes with a bunch of useful Macros and start-up procedures and other helpful stuff. It makes a lot of settings configurable via your slicer by providing their values within the print's GCode.
 
 Have a look at it:
-https://github.com/Frix-x/klippain
+[Klippain project page at GitHub](https://github.com/Frix-x/klippain)
 
 
 ## (Optional) Klipper TMC Autotune
 This sets up the TMC drivers on your MCU to match your stepper motor's individual technical profiles. This usually results in less noise, less heat and more precise prints:
-https://github.com/andrewmcgr/klipper_tmc_autotune/
+[TMC Autotune project page at GitHub](https://github.com/andrewmcgr/klipper_tmc_autotune/)
 
 
 ## (Optional) Use an ADXL345 accelerometer via SPI
@@ -233,15 +234,14 @@ param_spidev_spi_bus=0
 Alternatively, edit this file via sudo and add the line. It's the same.
 ```/boot/armbianEnv.txt```
 
-(For more information, have a look at this answer on Stackexchange: https://unix.stackexchange.com/a/497005)
+(For more information, [have a look at this answer on Stackexchange](https://unix.stackexchange.com/a/497005))
 
 ### Reboot ;)
 Connect as regular user again.
 
 ### Make the SBC become an MCU for Klipper.
 
-Follow the Klipper manual for that:
-https://www.klipper3d.org/RPi_microcontroller.html#install-the-rc-script
+[Follow the Klipper manual for that](https://www.klipper3d.org/RPi_microcontroller.html#install-the-rc-script)
 
 Perform the `Install the rc script` and `Building the micro-controller code` parts.
 
@@ -258,8 +258,7 @@ and:
 ~/klippy-env/bin/pip install -v numpy
 ```
 
-(The Klipper manual tells you more:
-https://www.klipper3d.org/Measuring_Resonances.html#software-installation)
+([The Klipper manual tells you more](https://www.klipper3d.org/Measuring_Resonances.html#software-installation))
 
 ### Add the configuration to your printer.cfg:
 
