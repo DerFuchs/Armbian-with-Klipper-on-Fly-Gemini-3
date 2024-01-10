@@ -1,7 +1,7 @@
 # Run Armbian with Klipper on a Fly Gemini 3.0 board
 (sort of)
 
-The Fly Gemini printer controller board is a chimera of a FlyPi and a printer MCU. The FlyPi is a Raspberry Pi clone and is comes with FlyOS by default. That's an operating system, based on Armbian and maintained by Mellow.
+The Fly Gemini printer controller board is a chimera of a FlyPi and a printer MCU. The FlyPi is a Raspberry Pi clone. It comes with FlyOS by default. That's an operating system, based on Armbian and maintained by Mellow.
 
 Some people prefer to have more control over the software they're using and so there's some demad to install a (mostly) stock Armbian OS.
 
