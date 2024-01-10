@@ -50,7 +50,7 @@ After flasing that SD card with the Armbian image, put it into your Gemini and f
 ### Connect to it the first time
 There's multiple ways to connect to the system. This guide only shows how to do it via network connection. 
 
-If you don't own a router with LAN ports or don't have a LAN cable by hand to connect your Gemini to your router, you can choose the way over USB. Use this guide, starting at Step 5: s://jjarrard.github.io/Gemini-V3-Flash-Voron-V0/installation/
+If you don't own a router with LAN ports or don't have a LAN cable by hand to connect your Gemini to your router, you can choose the way over USB. Use this guide, starting at Step 5: [https://jjarrard.github.io/Gemini-V3-Flash-Voron-V0/installation/](https://jjarrard.github.io/Gemini-V3-Flash-Voron-V0/installation/)
 
 Connect your Gemini with your local router or switch with a LAN cable and find out the IP address of the Gemini via your router's UI. Use your router's manual to figure out how to do it. It's usually a login via browser and then navigating to "network devices" or something like that.
 
