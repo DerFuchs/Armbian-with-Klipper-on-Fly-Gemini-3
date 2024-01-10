@@ -17,6 +17,13 @@ It is recommended to use another SD card to keep your current setup untouched. Y
 # Restrictions
 You're not able to fully upgrade the Armbian OS (yet) because some of  the software has been hard-coded into the system by Mellow. As soon there's a possible solution for getting rid of it, this guide will be upgraded. But for now you will NOT get a fully (but mostly) independent system.
 
+# An alternative Armbian Image by Reemo3DP
+There's a ready-to-use OS image which has not only been upgraded to the latest Linux kernel, you also can safely upgrade it in the future: 
+[Download Reemo3DP's Fly Gemini OS Image on his GitHub page](https://github.com/reemo3dp/mellowfly-geminipi-armbian)
+
+I highly recommend using this image instead of using Mellow's official Armbian. If you do so, proceed in this guide with [Install Printing Software](#install-printing-software)
+
+
 # Known problems
 - reboot does not work properly
 - SPI for ADXL345 requires some additional work
