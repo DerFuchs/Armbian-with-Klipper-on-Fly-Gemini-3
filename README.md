@@ -21,7 +21,7 @@ You're not able to fully upgrade the Armbian OS (yet) because some of  the softw
 There's a ready-to-use OS image which has not only been upgraded to the latest Linux kernel, you also can safely upgrade it in the future: 
 [Download Reemo3DP's Fly Gemini OS Image on his GitHub page](https://github.com/reemo3dp/mellowfly-geminipi-armbian)
 
-I highly recommend using this image instead of using Mellow's official Armbian. If you do so, proceed in this guide with [Install Printing Software](#install-printing-software)
+I highly recommend using this image instead of using Mellow's official Armbian. If you do so, simply skip the [Disable updating kernel and other stuff step](#disable-updating-kernel-and-other-stuff)
 
 
 # Known problems
