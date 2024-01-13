@@ -10,12 +10,12 @@ Mellow provides their own branded minimalistic version of Armbian on their websi
 So, what we're doing here is using that basic Armbian OS to install Klipper, Moonraker, Fluidd (...) and some other basic and extended tools on it to make it your own system as far as possible.
 
 # Disclaimer
-Use this manual at your own risk. Some of the steps provided may cause damage to your software or hardware. You are fully responsible for every damage. Read the whole manual carefully before you start. Don't start if you don't know what you're doing. You need some basic knowledge about how to connect on a device on a terminal software via SSH. If you don't know what that is, don't proceed.
+Use this manual at your own risk. Some of the steps provided may cause damage to your software or hardware. You are fully responsible for every damage. Read the whole manual carefully before you start. Don't start if you don't know what you're doing. You need some knowledge about Linux, how to connect on a device on a terminal software via SSH and shell commands. If you don't know what that is, don't proceed.
 
 It is recommended to use another SD card to keep your current setup untouched. You can simply swap these cards on the left side of your Fly Gemini.
 
 # No Support
-The image runs fine for me, but understand that you need linux knowledge to set it up correctly and there is no support provided for them by anyone. Please educate yourself.
+The image runs fine for me, but understand that you need  Linux knowledge to set it up correctly. Neither me nor Reemo can give any support for basic Linux stuff. 
 
 # Restrictions
 You're not able to fully upgrade the Armbian OS (yet) because some of  the software has been hard-coded into the system by Mellow. As soon there's a possible solution for getting rid of it, this guide will be upgraded. But for now you will NOT get a fully (but mostly) independent system.
